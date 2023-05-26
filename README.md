@@ -4,7 +4,7 @@
 * Explain TCP and UDP protocols and go over their simularities/differences
 * Give an example of both using Qt C++
 
-## Breif Overview of Networking 
+## Brief Overview of Networking 
 
 * Computer networking refers to the practice of connecting multiple computers and devices together to facilitate communication and data sharing. It involves the design, implementation, and management of networks that enable the exchange of information and resources.
 * Devices are interconnected to create a network infrastructure. This infrastructure allows devices to communicate with each other, share data, access resources, and collaborate effectively.
