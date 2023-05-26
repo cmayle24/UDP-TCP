@@ -5,6 +5,21 @@
 * Give an example of both using Qt C++
 
 ## Breif Overview of Networking 
+Computer networking refers to the practice of connecting multiple computers and devices together to facilitate communication and data sharing. It involves the design, implementation, and management of networks that enable the exchange of information and resources.
+
+In computer networking, devices such as computers, servers, routers, switches, and other network components are interconnected to create a network infrastructure. This infrastructure allows devices to communicate with each other, share data, access resources, and collaborate effectively.
+
+Key concepts in computer networking include:
+
+Network Protocols: Networks rely on protocols, which are a set of rules and procedures that govern communication between devices. Protocols ensure that data is transmitted reliably, efficiently, and securely. Examples of network protocols include TCP/IP, Ethernet, Wi-Fi, and DNS.
+
+Network Topologies: Network topologies refer to the physical or logical arrangement of devices in a network. Common topologies include bus, star, ring, mesh, and hybrid. Each topology has its own advantages and disadvantages in terms of cost, scalability, and fault tolerance.
+
+Network Architecture: Network architecture encompasses the design and structure of a network. It involves decisions regarding network layout, hardware and software components, security measures, and scalability. Common network architectures include client-server, peer-to-peer, and cloud-based architectures.
+
+Internet and Intranet: The Internet is a global network of networks that connects millions of devices worldwide. It enables communication and information exchange on a global scale. An intranet, on the other hand, is a private network that operates within an organization, providing internal communication and collaboration.
+
+Network Security: Network security focuses on protecting network resources, data, and devices from unauthorized access, attacks, and vulnerabilities. It involves implementing measures such as firewalls, encryption, authentication, and access control to ensure the confidentiality, integrity, and availability of network resources.
 
 ## UDP:
 
