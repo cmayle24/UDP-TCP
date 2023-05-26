@@ -43,6 +43,8 @@ Transport Layer (equivalent to OSI Transport Layer): This layer corresponds to t
 
 Application Layer (equivalent to OSI Session, Presentation, and Application Layers): The application layer corresponds to multiple layers in the OSI model. It provides application-specific protocols and services for end-user applications, including HTTP, FTP, SMTP, and many others.
 
+![alt text](https://us-west-2-02880055-view.menlosecurity.com/c/0/i/aHR0cHM6Ly93d3cucmVzZWFyY2hnYXRlLm5ldC9wdWJsaWNhdGlvbi8zMjc0ODMwMTEvZmlndXJlL2ZpZzIvQVM6NjY4MDMwMzY3NDM2ODAyQDE1MzYyODIyNTk4ODUvVGhlLWxvZ2ljYWwtbWFwcGluZy1iZXR3ZWVuLU9TSS1iYXNpYy1yZWZlcmVuY2UtbW9kZWwtYW5kLXRoZS1UQ1AtSVAtc3RhY2suanBn)
+
 ## UDP:
 
 UDP is a connectionless protocol, meaning it doesn't establish a direct connection between the sender and receiver before sending data.
