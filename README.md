@@ -5,33 +5,30 @@
 * Give an example of both using Qt C++
 
 ## Breif Overview of Networking 
-Computer networking refers to the practice of connecting multiple computers and devices together to facilitate communication and data sharing. It involves the design, implementation, and management of networks that enable the exchange of information and resources.
 
-In computer networking, devices such as computers, servers, routers, switches, and other network components are interconnected to create a network infrastructure. This infrastructure allows devices to communicate with each other, share data, access resources, and collaborate effectively.
+* Computer networking refers to the practice of connecting multiple computers and devices together to facilitate communication and data sharing. It involves the design, implementation, and management of networks that enable the exchange of information and resources.
+* Devices are interconnected to create a network infrastructure. This infrastructure allows devices to communicate with each other, share data, access resources, and collaborate effectively.
+* Some key concepts are network topolgy, network infastructure, network arhicteture, network secuity
+* Today's focus is network protocols, which are the ruleset that governs communication between devices to ensure data transmission.
 
-Key concepts in computer networking include:
+## OSI and TCP/IP Model
 
-Network Protocols: Networks rely on protocols, which are a set of rules and procedures that govern communication between devices. Protocols ensure that data is transmitted reliably, efficiently, and securely. Examples of network protocols include TCP/IP, Ethernet, Wi-Fi, and DNS.
 
-Network Topologies: Network topologies refer to the physical or logical arrangement of devices in a network. Common topologies include bus, star, ring, mesh, and hybrid. Each topology has its own advantages and disadvantages in terms of cost, scalability, and fault tolerance.
-
-Network Architecture: Network architecture encompasses the design and structure of a network. It involves decisions regarding network layout, hardware and software components, security measures, and scalability. Common network architectures include client-server, peer-to-peer, and cloud-based architectures.
-
-Internet and Intranet: The Internet is a global network of networks that connects millions of devices worldwide. It enables communication and information exchange on a global scale. An intranet, on the other hand, is a private network that operates within an organization, providing internal communication and collaboration.
-
-Network Security: Network security focuses on protecting network resources, data, and devices from unauthorized access, attacks, and vulnerabilities. It involves implementing measures such as firewalls, encryption, authentication, and access control to ensure the confidentiality, integrity, and availability of network resources.
 
 ## UDP:
 
 UDP is a connectionless protocol, meaning it doesn't establish a direct connection between the sender and receiver before sending data.
+
 It provides a simple and lightweight method of communication, without the overhead of establishing and maintaining a connection.
 UDP is often used for applications where speed and efficiency are more important than guaranteed delivery or reliability.
 It does not guarantee that the data will reach the destination or arrive in the correct order.
-UDP is commonly used for real-time streaming, online gaming, DNS queries, and other applications where slight delays or occasional data loss are acceptable.
+UDP is commonly used in applications where slight delays or occasional data loss are acceptable.
+
+### UDP Examples
 
 ### UDP Socket:
 
-A UDP socket is a programming interface that allows applications to send and receive UDP datagrams.
+A UDP socket is a programming interface that allows applications to send and receive UDP **datagrams**.
 It operates on the UDP protocol and provides an endpoint for communication between devices.
 UDP sockets are connectionless, meaning you can send packets to any destination without establishing a connection first.
 They are often used for applications that require low latency and can tolerate some data loss, such as real-time streaming or multiplayer gaming.
@@ -40,11 +37,10 @@ In programming, UDP sockets can be created using libraries or APIs, like the Ber
 ## TCP:
 
 TCP is a connection-oriented protocol, which means it establishes a reliable connection between the sender and receiver before data transmission.
-It provides reliable, ordered, and error-checked delivery of data packets.
+It provides reliable, ordered, and error-checked delivery of data **packets**.
 TCP ensures that data packets are received in the correct order and can retransmit lost or corrupted packets.
 It also includes mechanisms for flow control to manage the rate at which data is transmitted.
-TCP is typically used for applications that require guaranteed delivery and reliable communication, such as web browsing, file transfers, email, and other applications where data integrity is crucial.
-Now, let's dive into sockets, which are the programming interfaces used for network communication using UDP and TCP:
+TCP is typically used for applications that require guaranteed delivery and reliable communication.
 
 ### TCP Socket:
 
@@ -105,7 +101,7 @@ Email: When you send or receive emails using protocols like SMTP (Simple Mail Tr
 
 Remote Desktop: Applications like Remote Desktop Protocol (RDP) or Virtual Network Computing (VNC) use TCP for remote access to computers. These protocols need a reliable and accurate transmission of keyboard, mouse, and screen updates between the local and remote machines.
 
-UDP Example:
+## UDP Example in Qt:
 
 ```c++
 #include <QUdpSocket>
@@ -145,7 +141,7 @@ int main()
 }
 ```
  
-TCP Example:
+## TCP Example in Qt:
 
 ```c++
 #include <QTcpSocket>
@@ -220,3 +216,7 @@ At this point, the connection is established, and both the client and server can
 It's important to note that the sequence numbers are crucial for reliable data transmission and ensuring proper ordering of segments. They help detect and recover from any lost or duplicate segments during the communication.
 
 The three-way handshake allows the client and server to agree on initial sequence numbers, confirm each other's ability to receive data, and synchronize their communication parameters. This process establishes a reliable and bidirectional connection before any actual data transmission occurs.
+
+## If You don't rememeber anything, this should help
+
+![alt text](https://preview.redd.it/x1fgi3rz24v71.png?auto=webp&s=bc7c9a16692cba32b6e1a8963c901b59940ed371)
