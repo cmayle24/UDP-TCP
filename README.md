@@ -1,13 +1,22 @@
 # UDP-TCP Sockets
 
-UDP:
+## UDP:
 
 UDP is a connectionless protocol, meaning it doesn't establish a direct connection between the sender and receiver before sending data.
 It provides a simple and lightweight method of communication, without the overhead of establishing and maintaining a connection.
 UDP is often used for applications where speed and efficiency are more important than guaranteed delivery or reliability.
 It does not guarantee that the data will reach the destination or arrive in the correct order.
 UDP is commonly used for real-time streaming, online gaming, DNS queries, and other applications where slight delays or occasional data loss are acceptable.
-TCP:
+
+### UDP Socket:
+
+A UDP socket is a programming interface that allows applications to send and receive UDP datagrams.
+It operates on the UDP protocol and provides an endpoint for communication between devices.
+UDP sockets are connectionless, meaning you can send packets to any destination without establishing a connection first.
+They are often used for applications that require low latency and can tolerate some data loss, such as real-time streaming or multiplayer gaming.
+In programming, UDP sockets can be created using libraries or APIs, like the Berkeley Sockets API in C/C++ or the socket module in Python.
+
+## TCP:
 
 TCP is a connection-oriented protocol, which means it establishes a reliable connection between the sender and receiver before data transmission.
 It provides reliable, ordered, and error-checked delivery of data packets.
@@ -16,15 +25,7 @@ It also includes mechanisms for flow control to manage the rate at which data is
 TCP is typically used for applications that require guaranteed delivery and reliable communication, such as web browsing, file transfers, email, and other applications where data integrity is crucial.
 Now, let's dive into sockets, which are the programming interfaces used for network communication using UDP and TCP:
 
-UDP Socket:
-
-A UDP socket is a programming interface that allows applications to send and receive UDP datagrams.
-It operates on the UDP protocol and provides an endpoint for communication between devices.
-UDP sockets are connectionless, meaning you can send packets to any destination without establishing a connection first.
-They are often used for applications that require low latency and can tolerate some data loss, such as real-time streaming or multiplayer gaming.
-In programming, UDP sockets can be created using libraries or APIs, like the Berkeley Sockets API in C/C++ or the socket module in Python.
-
-TCP Socket:
+### TCP Socket:
 
 A TCP socket is a programming interface that enables applications to establish a reliable, bidirectional connection and exchange data over a TCP connection.
 It operates on the TCP protocol and provides an endpoint for communication.
