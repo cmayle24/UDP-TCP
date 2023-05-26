@@ -127,12 +127,12 @@ The three-way handshake is a method used by TCP (Transmission Control Protocol) 
 * This segment contains a randomly generated sequence number (SEQ) to establish the initial sequence number for the connection. 
 * The client also selects an initial value for the receive window, which represents the amount of data it can receive at a time. 
 
-### Step 2: SYN-ACK (Synchronize-Acknowledge)
+#### Step 2: SYN-ACK (Synchronize-Acknowledge)
 * Upon receiving the SYN segment, the server responds by sending a TCP segment with both the SYN and ACK (acknowledge) flags set. 
 * The SYN-ACK segment acknowledges the receipt of the client's SYN segment and also synchronizes the sequence numbers. 
 * The server generates its own sequence number (SEQ) and acknowledges the client's sequence number (ACK). 
 
-Step 3: ACK (Acknowledge) 
+#### Step 3: ACK (Acknowledge) 
 * Finally, the client acknowledges the receipt of the server's SYN-ACK segment by sending an ACK segment. 
 * The ACK segment has the ACK flag set and acknowledges the server's sequence number. 
 * At this point, the connection is established, and both the client and server can begin exchanging data. 
