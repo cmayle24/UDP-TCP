@@ -178,4 +178,23 @@ In broadcast communication, the data is addressed to a special IP address known 
 The data is transmitted over the network, and every device within the network segment receives and processes the data.
 Broadcast communication is a one-to-all communication model, where a single sender communicates with all devices on the local network.
 Broadcast is typically used for network discovery protocols, such as Address Resolution Protocol (ARP), where a device needs to obtain the MAC address corresponding to a specific IP address within its local network segment.
+
 In summary, unicast is one-to-one communication, multicast is one-to-many communication, and broadcast is one-to-all communication. Each method has its own use cases and considerations based on the specific requirements of the network application or protocol being used.
+
+The three-way handshake is a method used by TCP (Transmission Control Protocol) to establish a reliable connection between a client and a server. It involves a series of steps to synchronize and negotiate parameters before data transmission can begin. Here's an overview of the three-way handshake process:
+
+Step 1: SYN (Synchronize)
+The client initiates the connection by sending a TCP segment with the SYN (synchronize) flag set to the server.
+This segment contains a randomly generated sequence number (SEQ) to establish the initial sequence number for the connection.
+The client also selects an initial value for the receive window, which represents the amount of data it can receive at a time.
+Step 2: SYN-ACK (Synchronize-Acknowledge)
+Upon receiving the SYN segment, the server responds by sending a TCP segment with both the SYN and ACK (acknowledge) flags set.
+The SYN-ACK segment acknowledges the receipt of the client's SYN segment and also synchronizes the sequence numbers.
+The server generates its own sequence number (SEQ) and acknowledges the client's sequence number (ACK).
+Step 3: ACK (Acknowledge)
+Finally, the client acknowledges the receipt of the server's SYN-ACK segment by sending an ACK segment.
+The ACK segment has the ACK flag set and acknowledges the server's sequence number.
+At this point, the connection is established, and both the client and server can begin exchanging data.
+It's important to note that the sequence numbers are crucial for reliable data transmission and ensuring proper ordering of segments. They help detect and recover from any lost or duplicate segments during the communication.
+
+The three-way handshake allows the client and server to agree on initial sequence numbers, confirm each other's ability to receive data, and synchronize their communication parameters. This process establishes a reliable and bidirectional connection before any actual data transmission occurs.
