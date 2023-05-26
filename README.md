@@ -122,11 +122,15 @@ A TCP socket is a programming interface that enables applications to establish a
 
 The three-way handshake is a method used by TCP (Transmission Control Protocol) to establish a reliable connection between a client and a server. It involves a series of steps to synchronize and negotiate parameters before data transmission can begin. Here's an overview of the three-way handshake process:
 
-* Step 1: SYN (Synchronize) The client initiates the connection by sending a TCP segment with the SYN (synchronize) flag set to the server. 
+#### Step 1: SYN (Synchronize)
+* The client initiates the connection by sending a TCP segment with the SYN (synchronize) flag set to the server. 
 * This segment contains a randomly generated sequence number (SEQ) to establish the initial sequence number for the connection. 
 * The client also selects an initial value for the receive window, which represents the amount of data it can receive at a time. 
 
-Step 2: SYN-ACK (Synchronize-Acknowledge) Upon receiving the SYN segment, the server responds by sending a TCP segment with both the SYN and ACK (acknowledge) flags set. The SYN-ACK segment acknowledges the receipt of the client's SYN segment and also synchronizes the sequence numbers. The server generates its own sequence number (SEQ) and acknowledges the client's sequence number (ACK). 
+### Step 2: SYN-ACK (Synchronize-Acknowledge)
+* Upon receiving the SYN segment, the server responds by sending a TCP segment with both the SYN and ACK (acknowledge) flags set. 
+* The SYN-ACK segment acknowledges the receipt of the client's SYN segment and also synchronizes the sequence numbers. 
+* The server generates its own sequence number (SEQ) and acknowledges the client's sequence number (ACK). 
 
 Step 3: ACK (Acknowledge) 
 * Finally, the client acknowledges the receipt of the server's SYN-ACK segment by sending an ACK segment. 
