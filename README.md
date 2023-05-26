@@ -1,5 +1,11 @@
 # UDP-TCP Sockets
 
+* Small overview of networking and network models
+* Explain TCP and UDP protocols and go over their simularities/differences
+* Give an example of both using Qt C++
+
+## Breif Overview of Networking 
+
 ## UDP:
 
 UDP is a connectionless protocol, meaning it doesn't establish a direct connection between the sender and receiver before sending data.
